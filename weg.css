@@ -772,11 +772,11 @@ lite-youtube {
 
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	
 }
 
 .mego img {
-
+	justify-content: center;
 	min-width: 1000px;
 	height: 500px;
 	border-radius: 10px;
