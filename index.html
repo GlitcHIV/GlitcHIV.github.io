@@ -7,8 +7,9 @@
  <link rel="stylesheet" href="dist/css/animsition.min.css">
  <link rel="stylesheet" type="text/css" href="weg.css">
  <script src="typed.min.js"></script>
+ <link rel="icon" type="image/x-icon" href="dove.png">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
- <meta name="author" content="HRe7ma">
+ <meta name="author" content="GlitcH">
  <meta name="viewport" content="width-device-width, initial-scale=1.0">
  <meta name="keywords" content="ويجز, صفحة الفانز, التراب">
  <meta name="description" content="كل ما يخص دكتور التراب شيت وجوزه الحكيم الجديد الفشيخ">
@@ -16,8 +17,11 @@
  <script src="sweetalert2.all.min.js"></script>
  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
- <link rel="stylesheet" href="lite-yt-embed.css" />
- <script src="lite-yt-embed.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/gh/phucbm/flickity-responsive@latest/flickity-responsive.min.js"></script>
+ <script src="responsive-object.js"></script>
+ 
  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -30,9 +34,7 @@
 
 }
 
-.flickity-prev-next-button.previous{left:-100px}
 
-.flickity-prev-next-button.next{right:-100px}
 
 .animsition-overlay-slide {
 
@@ -65,6 +67,28 @@
 
 </div>
 
+<div class="contets">
+
+  <div id="myNav" class="overlaysdf">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav(), logf()">&times;</a>
+    <div class="overlay-content">
+    <a href="" onclick="sjk(); return false;">الرئيسية</a>
+    <a href="#about" onclick="closeNav(), logf()">عن ويجز</a>
+    <a href="#arti" onclick="closeNav(), logf()">صور حصرية</a>
+    <a href="" onclick="sjgk(); return false;">حقوق الملكية</a>
+    <a href="#contir" onclick="closeNav(), logf()">تواصل معنا</a>
+    </div>
+  </div>
+  
+  <div id="hambb" onclick="openNav(), lofg()">
+    
+      <span></span>
+    <span style="background-color: #d63031;border:0.5px solid #d63031"></span>
+    <span></span>
+    </div>
+  
+  </div>
+
 
 <div class="main">
   <a href="" onclick="return false;"><h1><i class="fas fa-hand-peace" id="shshyy"></i>ويجز<i class="fas fa-hand-peace" id="shshy"></i>
@@ -81,11 +105,9 @@
 
 <div class="heeed">
 
-<h1>كل ما يخص دكتور التراب شيت وجوزه <span class="text-slider"></span></h1>
+<h1>كل ما يخص دكتور التراب شيت وجوزه<br id="soqe" /> <span class="text-slider"></span><br id="soqe" /></h1>
 
 </div>
-
-	
 
 
 <div class="plo">
@@ -93,7 +115,7 @@
 <div class="gghd">
 	<a href="" onclick="swe(); return false;">شاركنا رأيك</a>
 	</div>
-	<div class="hhiu">
+	<div class="hhiu" id="sswb">
 		<a href="#trac">تصفح الان</a>
 		</div>
 </div>
@@ -196,42 +218,47 @@
     <h1>احدث الاغاني</h1>
     
     </div>
-
-
     <div class="carousel">
-
+    
       <div class="blk">
-        <lite-youtube videoid="c_xtMNwTLVs" params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
+        <div class="holas">
+        <a href="https://www.youtube.com/watch?v=c_xtMNwTLVs" target="_blank"><img src="ssaq.png"></a>
+    </div>
         <div class="cc">
           <h2>ويجز - <span>مش فير</span></h2>
         </div>
       </div>
-
+      
       <div class="blk">
-        <lite-youtube videoid="SEhSs5Uemsk" params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
+        <div class="holas" style="background-image: url(doerk.jpg);">
+          <a href="https://www.youtube.com/watch?v=SEhSs5Uemsk" target="_blank"><img src="ssaq.png"></a>
+      </div>
         <div class="cc">
           <h2>ويجز - <span id="dork">دورك جاي</span></h2>
         </div>
       </div>
 
       <div class="blk">
-        <lite-youtube videoid="ZiPSf1OSwYI" params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
-        
+        <div class="holas" style="background-image: url(bazzs.jpg);">
+          <a href="https://www.youtube.com/watch?v=ZiPSf1OSwYI" target="_blank"><img src="ssaq.png"></a>
+      </div>        
         <div class="cc">
           <h2>ويجز - <span id="bzz">باظت</span></h2>
         </div>
       </div>
       <div class="blk">
-        <lite-youtube videoid="-h2L426YZGA" params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
-        
+        <div class="holas" style="background-image: url(hasl.jpg);">
+          <a href="https://www.youtube.com/watch?v=-h2L426YZGA" target="_blank"><img src="ssaq.png"></a>
+      </div>           
         <div class="cc">
           <h2>ويجز - <span id="hsla">هصلا</span></h2>
         </div>
       </div>
 
       <div class="blk">
-        <lite-youtube videoid="RJFjHsu8ORg" params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
-        
+        <div class="holas" style="background-image: url(attm.jpg);">
+          <a href="https://www.youtube.com/watch?v=RJFjHsu8ORg" target="_blank"><img src="ssaq.png"></a>
+      </div>           
         <div class="cc">
           <h2>ويجز - ايه <span id="ggold">تي</span> ام</h2>
         </div>
@@ -240,8 +267,9 @@
      
 
       <div class="blk">
-        <lite-youtube videoid="mJww8D8Ekk4" params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
-        
+        <div class="holas" style="background-image: url(ttnnt.jpg);">
+          <a href="https://www.youtube.com/watch?v=z-_NQLXIjkg" target="_blank"><img src="ssaq.png"></a>
+      </div>        
         <div class="cc">
           <h2>ويجز - تي <span id="ggs">ان</span> تي</h2>
         </div>
@@ -250,32 +278,36 @@
 
   
       <div class="blk">
-        <lite-youtube videoid="UJ3FvOcw4lQ" params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
-        
+        <div class="holas" style="background-image: url(sker.jpg);">
+          <a href="https://www.youtube.com/watch?v=UJ3FvOcw4lQ" target="_blank"><img src="ssaq.png"></a>
+      </div>          
         <div class="cc">
           <h2>ويجز - <span id="slm">سكرتي</span></h2>
         </div>
       </div>
 
       <div class="blk">
-        <lite-youtube videoid="RyYqIL8OBBk" params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
-        
+        <div class="holas" style="background-image: url(haww.jpg);">
+          <a href="https://www.youtube.com/watch?v=RyYqIL8OBBk" target="_blank"><img src="ssaq.png"></a>
+      </div>             
         <div class="cc">
           <h2>ويجز - <span id="gjgs">حواري</span></h2>
         </div>
       </div>
 
       <div class="blk">
-        <lite-youtube videoid="b333X5FlHW4" params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
-        
+        <div class="holas" style="background-image: url(assy.jpg);">
+          <a href="https://www.youtube.com/watch?v=b333X5FlHW4" target="_blank"><img src="ssaq.png"></a>
+      </div>          
         <div class="cc">
           <h2>ويجز - <span id="jgs">اسياد البلد</span></h2>
         </div>
       </div>
 
       <div class="blk">
-        <lite-youtube videoid="WwB5w-Rt88k" params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
-      
+        <div class="holas" style="background-image: url(wahh.jpg);">
+          <a href="https://www.youtube.com/watch?v=WwB5w-Rt88k" target="_blank"><img src="ssaq.png"></a>
+      </div>        
         <div class="cc">
           <h2>ويجز - <span id="wwrh">واحد و عشرين</span></h2>
         </div>
@@ -283,16 +315,18 @@
 
 
       <div class="blk">
-        <lite-youtube videoid="3ULUohpQqMU" params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
-        
+        <div class="holas" style="background-image: url(khaa.jpg);">
+          <a href="https://www.youtube.com/watch?v=3ULUohpQqMU" target="_blank"><img src="ssaq.png"></a>
+      </div>        
         <div class="cc">
           <h2>ويجز - <span id="wgwrh">الغسالة</span></h2>
         </div>
       </div>
 
       <div class="blk">
-        <lite-youtube videoid="KfRVhPzXkPI" params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
-        
+        <div class="holas" style="background-image: url(kwwk.jpg);">
+          <a href="https://www.youtube.com/watch?v=KfRVhPzXkPI" target="_blank"><img src="ssaq.png"></a>
+      </div>          
         <div class="cc">
           <h2>ويجز - <span style="color:#97FD79; text-shadow: 2px 2px 4px #5AC43C;">كوزمو</span> <span style="color:#FCFF00; text-shadow: 2px 2px 4px goldenrod;">و</span> <span style="color: #FE9DE7; text-shadow: 2px 2px 4px #B61D8E;">واندا</span></h2>
         </div>
@@ -314,10 +348,10 @@
     <div class="incio">
 
 <div class="phho">
-  <img src="11ss.jpg">
+  <img src="11ss.jpg" id="kolew">
 </div>
 
-<div class="texoo">
+<div id="texoo">
 
   <h2>ويجز و الشهرة</h2>
 
@@ -326,7 +360,7 @@
   
 </div>
 
-<div class="texoo">
+<div id="texoot">
 
   <h2>بدايات ويجز</h2>
 
@@ -335,7 +369,7 @@
 
 <div class="phho">
 
-  <img src="9.jpg">
+  <img src="9.jpg" id="koleww">
 </div>
 
     </div>
@@ -370,23 +404,23 @@
     
     </div>
 
-    <div class="mego" data-aos="fade-down" data-aos-delay="500">
-    <img src="hjks.jpg">
+    <div class="mego" data-aos="fade-down" data-aos-delay="500" data-aos-once="true">
+    <img src="bekk.jpg" id="bacj">
     </div>
 
     <div class="boxerw">
 
-      <div class="border" data-aos="fade-right" data-aos-delay="200">
+      <div class="border" data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
         <h1>عدد المشاهدات</h1>
-        <p>تخطى هذا التراك 100 مليون مشاهدة في خلال سنة واحدة فقط</p>
+        <p>تخطى هذا التراك 100 مليون مشاهدة في خلال اقل من ست 6 شهور فقط</p>
         </div>
 
-        <div class="border" data-aos="fade-up" data-aos-delay="200">  
+        <div class="border" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">  
           <h1>عن الاحصائيات</h1>
-          <p>يعتبر تراك دورك جي الاكثر استماعا في الراب الى الان</p>
+          <p>يعتبر تراك البخت الاكثر استماعا في الراب الى الان</p>
           </div>
 
-      <div class="border" data-aos="fade-left" data-aos-delay="200">
+      <div class="border" data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
         <h1>اراء الجمهور</h1>
         <p>نال اعجاب الفانز ليس فقط على المستوى المحلى بل العالمي</p>
       </div> 
@@ -723,7 +757,7 @@
   </div>
   
   </section>
-
+  
 
   <section id="contir">
 
@@ -731,14 +765,23 @@
 
   <h1>تواصل معنا</h1>
 </div>
+<br />
 
+
+<div>
+  <div id="ss">
+  <div class="weas"><h1>Wegz</h1></div><br />
+  <div class="weas1"><p>الاسم</p><input type="text" placeholder="" class="text-slir" id="textfield1"><br /></div>
+  <div class="weas1"><p>البريد</p><input type="text" placeholder="" class="text-sli" id="textfield1"><br /></div>
+  <div class="weas1"><p>الرسالة</p><textarea placeholder="" class="tt-smsgmm" id="textfield4"></textarea></div>
+    <div class="weas4"><button onclick="swtye()"><img src="email22.png"></button></div>
+  </div>
+  </div>
 
 <div class="bieg">
 
-  <div class="pli">
-    <img src="macooo.png">
-  </div>
-<div class="potr">
+ <div class="swerq">
+  <br /><br /><br /><br />
 <div class="clicks">
 
 <div class="colp">
@@ -774,7 +817,7 @@
 
 </div>
 </div>
-
+<br /><br /><br /><br /><br />
 <div class="fint">
 
 
@@ -800,12 +843,186 @@
     
     
 </div>
+
 </div>
 
 
   </section>
+  <div class="fenoo">
+    <div class="fintii">
+    
+    
 
+      
+      <div class="secondd">
+      
+      <h3>Made&nbsp; <a href="#"> <span>< GlitcH /></span></a>&nbsp;Developed</h3>
+      
+      </div>
+      <div class="firsst">	
+      
+        <p>&copy; GH Rights Reserved</p>
+        
+        </div>
+ 
+      
+      
+    </div>
+    </div>
 <a href="#sfds" id="ssd"><i class="fas fa-bahai fa-lg fa-spin" style="color: rgb(109, 28, 28);"></i></a>
+
+
+<script type="text/javascript">
+	
+	function lofg(){
+
+$('html, body').css({
+    'overflow': 'hidden',
+  'height': '100%'
+
+})
+
+};
+
+
+</script>
+
+<script type="text/javascript">
+	
+		function logf(){
+
+$('html, body').css({
+    'overflow': 'auto',
+  'height': 'auto'
+
+})
+
+};
+</script>
+
+
+
+
+
+<script>
+
+
+  function myFunction(x) {
+    if (x.matches) { // If media query matches
+      document.getElementById("ss").style.display = "block";
+    } else {
+      document.getElementById("ss").style.display = "none";
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 1150px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes
+</script>
+
+
+
+
+<script>
+
+
+  function myFunction(f) {
+    if (f.matches) { // If media query matches
+      document.getElementById("bacj").style.display = "block";
+      document.getElementById("bacj").style.width = "100%";
+      document.getElementById("bacj").style.height = "auto";
+      document.getElementById("bacj").style.maxHeight = "500px";
+    } else {
+      document.getElementById("bacj").style.width = "1000px";
+      document.getElementById("bacj").style.height = "500px";
+    }
+  }
+  
+  var f = window.matchMedia("(max-width: 1150px)")
+  myFunction(f) // Call listener function at run time
+  f.addListener(myFunction) // Attach listener function on state changes
+  </script>
+
+
+<script>
+
+
+  function myFunction(q) {
+    if (q.matches) { // If media query matches
+      document.getElementById("kolew").style.display = "block";
+      document.getElementById("kolew").style.width = "100%";
+      document.getElementById("kolew").style.height = "auto";
+      document.getElementById("kolew").style.maxHeight = "400px";
+    } else {
+      document.getElementById("kolew").style.width = "500px";
+      document.getElementById("kolew").style.height = "400px";
+    }
+  }
+  
+  var q = window.matchMedia("(max-width: 1150px)")
+  myFunction(q) // Call listener function at run time
+  q.addListener(myFunction) // Attach listener function on state changes
+  </script>
+
+  
+<script>
+
+
+  function myFunction(z) {
+    if (z.matches) { // If media query matches
+      document.getElementById("koleww").style.display = "block";
+      document.getElementById("koleww").style.width = "100%";
+      document.getElementById("koleww").style.height = "auto";
+      document.getElementById("koleww").style.maxHeight = "400px";
+    } else {
+      document.getElementById("koleww").style.width = "500px";
+      document.getElementById("koleww").style.height = "400px";
+    }
+  }
+  
+  var z = window.matchMedia("(max-width: 1150px)")
+  myFunction(z) // Call listener function at run time
+  z.addListener(myFunction) // Attach listener function on state changes
+  </script>
+
+
+
+<script>
+
+
+  function myFunction(t) {
+    if (t.matches) { // If media query matches
+      document.getElementById("texoo").style.width = "100%";
+      document.getElementById("texoo").style.textAlign = "right";
+    } else {
+      document.getElementById("texoo").style.width = "50%";
+      document.getElementById("texoo").style.textAlign = "right";
+    }
+  }
+  
+  var t = window.matchMedia("(max-width: 1150px)")
+  myFunction(t) // Call listener function at run time
+  t.addListener(myFunction) // Attach listener function on state changes
+</script>
+
+<script>
+  function myFunction(tt) {
+    if (tt.matches) { // If media query matches
+      document.getElementById("texoot").style.width = "100%";
+      document.getElementById("texoot").style.textAlign = "right";
+      document.getElementById("texoot").style.order = "4";
+    } else {
+      document.getElementById("texoot").style.width = "50%";
+      document.getElementById("texoot").style.textAlign = "right";
+      document.getElementById("texoot").style.order = "0";
+    }
+  }
+  
+  var tt = window.matchMedia("(max-width: 1150px)")
+  myFunction(tt) // Call listener function at run time
+  tt.addListener(myFunction) // Attach listener function on state changes
+  </script>
+  
 
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <!-- jQuery -->
@@ -902,6 +1119,17 @@
    				      bindInputFocusEvents: true,
             }); 
         
+
+            var typed = new Typed(".tt-smsgmm", { 
+                strings: ['لكنه تمسك بشغفه في الراب.'], 
+                typeSpeed: 50, 
+                loop: true, 
+                backDelay: 900, 
+                backSpeed: 30,
+                attr: 'placeholder',
+                showCursor: false,
+   				      bindInputFocusEvents: true,
+            }); 
     
     </script>
 
@@ -1013,15 +1241,17 @@ Toast.fire({
 
 <script>
 
-  var flkty = new Flickity( '.carousel', {
+ 
+    var flkty = new Flickity( '.carousel', {
     arrowShape: 'M 0,50 L 60,00 L 50,30 L 80,30 L 80,70 L 50,70 L 60,100 Z',
-    prevNextButtons: true,
+    prevNextButtons: false,
     autoPlay: 5000,
     pauseAutoPlayOnHover: true,
     wrapAround: true,
     groupCells: true,
+ 
+    
 });
-
 
 </script>
 
@@ -1343,6 +1573,16 @@ AOS.init({
   document.getElementById('bnt').style = 'color: #636e72;';
   document.getElementById('lok').style = 'color: #636e72;';
   
+  }
+  </script>
+
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
   }
   </script>
   
